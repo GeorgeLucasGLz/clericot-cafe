@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Clericot Café</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="mask-header"></div>
+        <nav>
+            <div class="logo-side">
+                <img src="./assets/logo.webp" alt="Clericot Café">
+            </div>
+
+            <div class="links-side">
+                <a href="#" id="nav-home">Inicío</a>
+                <a href="#" id="nav-space">Ambiente</a>
+                <a href="#" id="nav-food">Cardápio</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <button class="btn-toggle-on" onclick="showMenuToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-toggle-on">
+                <li><a href="#inicio" id="toggle-home">Inicío</a></li>
+                <li><a href="#servicios" id="toggle-space">Ambiente</a></li>
+                <li><a href="#ubicacion" id="toggle-food">Cardápio</a></li>
+                <li><a href="#" target="_blank">Contato</a></li>
+                <button class="btn-toggle-close" onclick="closeMenuToggle()">
+
+                    <span></span>
+                    <span></span>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section-banner">
+
+            <div class="mascara-banner"></div>
+            <div class="title-banner">
+                <h1>Venha conhecer o melhor restaurante<br> de Vitória na
+                    <span>Clericot Café</span>
+                </h1>
+            </div>
+            <button class="start-btn">Conhecer</button>
+        </section>
+
+        <section class="section-destaques">
+
+            <div class="item-destaque">
+                <img src="./assets/local.webp" alt="foto">
+                <span>Título</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti unde, maiores aut,
+                    vitae ut quam magni facilis vel magnam placeat sapiente! Culpa hic enim magnam! Mollitia
+                    doloribus quaerat repudiandae!</p>
+
+            </div>
+
+            <div class="item-destaque">
+                <img src="./assets/love.webp" alt="foto">
+                <span>Título</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti unde, maiores aut,
+                    vitae ut quam magni facilis vel magnam placeat sapiente! Culpa hic enim magnam! Mollitia
+                    doloribus quaerat repudiandae!</p>
+
+            </div>
+            <div class="item-destaque">
+                <img src="./assets/beer.webp" alt="foto">
+                <span>Título</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti unde, maiores aut,
+                    vitae ut quam magni facilis vel magnam placeat sapiente! Culpa hic enim magnam! Mollitia
+                    doloribus quaerat repudiandae!</p>
+
+            </div>
+            <div class="item-destaque">
+                <img src="./assets/food.webp" alt="foto">
+                <span>Título</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti unde, maiores aut,
+                    vitae ut quam magni facilis vel magnam placeat sapiente! Culpa hic enim magnam! Mollitia
+                    doloribus quaerat repudiandae!</p>
+
+            </div>
+
+            <div class="item-destaque">
+                <img src="./assets/beach.webp" alt="foto">
+                <span>Título</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti unde, maiores aut,
+                    vitae ut quam magni facilis vel magnam placeat sapiente! Culpa hic enim magnam! Mollitia
+                    doloribus quaerat repudiandae!</p>
+
+            </div>
+
+        </section>
+
+        <div class="slides">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./assets/fundo.webp" alt="" srcset="">
+                    <img class="swiper-slide" src="./assets/local.webp" alt="" srcset="">
+                    <img class="swiper-slide" src="./assets/food2.webp" alt="" srcset="">
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+
+        <section class="section-cardapio">
+
+
+            <div class="cardapio-card">
+                <h3>Cardápio 1</h3>
+                <div id="cardapio1">
+                    <a href="./assets/exec-1-1.webp">
+                        <img src="./assets/exec-1-1.webp" alt="">
+                    </a>
+
+                    <a href="assets/exec-1-2.webp"></a>
+                </div>
+            </div>
+
+            <div class="cardapio-card">
+                <h3>Cardápio 2</h3>
+                <div id="cardapio2">
+                    <a href="./assets/exec-2-1.webp">
+                        <img src="./assets/exec-2-1.webp" alt="">
+                    </a>
+
+                    <a href="./assets/exec-2-2.webp"></a>
+                </div>
+            </div>
+
+
+        </section>
+        <footer class="rodape">
+            <a href="https://freelings.netlify.app">© 2024 Freelings. Todos os direitos reservados.</a>
+        </footer>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"
+        integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-image: url(./assets/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 0 8px black;
+
+}
+
+.mask-header {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.3);
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+main {
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*----------------Header-------------------------*/
+nav {
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo-side img {
+    width: 120px;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 174, 255);
+}
+
+nav .links-side {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.1vw;
+}
+
+nav .links-side a {
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav .links-side a:hover {
+    transition: 0.3s ease-in-out;
+    color: #81b3ff;
+}
+
+main .section-banner {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(./assets/bg2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+/*-----------------------------------------------------*/
+
+
+
+/*----------------TOGGLE OFF-------------------------*/
+.btn-toggle-on {
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 1%;
+    background-color: rgba(0, 107, 247, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgb(154, 154, 245);
+    backdrop-filter: blur(5px);
+
+}
+
+.btn-toggle-on span {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------*/
+
+/*----------------TOGGLE ON-------------------------*/
+.nav-toggle-on {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 107, 247, 0.5);
+    backdrop-filter: blur(6px);
+    list-style: none;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav-toggle-on.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-toggle-on li a {
+    color: #cefff8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 5vw;
+    text-shadow: 2px 3px 5px black;
+}
+
+.btn-toggle-close {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-toggle-close span {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.btn-toggle-close span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+
+
+}
+
+.btn-toggle-close span:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+
+
+}
+
+/*--------------------------------------------------------*/
+
+
+/*----------------HERO-SECTION------------------------*/
+.section-banner .mascara-banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+
+
+.section-banner .title-banner h1 {
+    text-shadow: 2px 3px 8px black;
+    font-size: 3.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+.section-banner .title-banner span {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4193ff;
+    text-shadow: 2px 3px 8px black;
+}
+
+.section-banner .start-btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    z-index: 0;
+    background-image: linear-gradient(to right bottom, #81b3ff, #649bf8, #4782ef, #2c6ae4, #0c50d8);
+
+}
+
+/*--------------------------------------*/
+
+
+
+/*----------------DESTAQUES------------------------*/
+
+.section-destaques {
+
+    /* width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; */
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin: 50px auto;
+}
+
+.item-destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+
+.item-destaque img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.swiper {
+    box-shadow: 0 0 10px #2c6ae4;
+    border: 3px solid #2c6ae4;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 30%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------------------------SECTION CARDÁPIO---------------------------------------*/
+
+
+.section-cardapio {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardapio-card {
+    text-transform: uppercase;
+    color: #0c50d8;
+    width: 700px;
+    height: 700px;
+}
+
+.cardapio-card img {
+    border: 2px solid #2c6ae4;
+    box-shadow: 0 0 10px #0c50d8;
+    border-radius: 5px;
+    width: 100%;
+    height: 600px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+
+}
+
+.rodape a{
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------*/
+
+
+
+
+/*----------------RESPONSIVIDADE-----------------------*/
+
+@media (max-width: 2200px) {
+
+    .item-destaque {
+        width: 400px;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .cardapio-card {
+        width: 500px;
+        height: 500px;
+    }
+
+    .cardapio-card img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 1280px) {
+    nav .links-side {
+        font-size: 1.2vw;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .section-cardapio {
+        margin: 70px auto;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cardapio-card {
+        width: 80%;
+        height: 100%;
+    }
+
+    .cardapio-card img {
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    
+.rodape a{
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+    .section-destaques {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav .links-side {
+        font-size: 2vw;
+    }
+
+
+    .section-banner .title-banner h1 {
+        font-size: 4.3vw;
+    }
+
+    .section-banner .start-btn {
+        font-size: 15px;
+    }
+
+    .swiper {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .item-destaque {
+        width: 95%;
+    }
+
+
+    .item-destaque img {
+        object-position: bottom;
+        height: 50%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .section-destaques {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+@media (max-width: 750px) {
+
+    nav .logo-side {
+        padding-left: 10px;
+    }
+
+    nav {
+        justify-content: start;
+    }
+
+    nav .links-side {
+        display: none;
+    }
+
+    .btn-toggle-on {
+        display: flex;
+    }
+
+    .section-banner .title-banner h1 {
+        font-size: 5.8vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .swiper {
+        width: 90%;
+        height: 80%;
+    }
+
+}
