@@ -12,7 +12,8 @@
 </head>
 
 <body>
-
+    <div class="mask-video"></div>
+    <video src="./assets/videos/sea-bg.mp4" muted autoplay loop class="video-sea"></video>
     <header>
         <div class="mask-header"></div>
         <nav>
@@ -24,7 +25,8 @@
                 <a href="#" id="nav-home">Inicío</a>
                 <a href="#" id="nav-space">Ambiente</a>
                 <a href="#" id="nav-food">Cardápio</a>
-                <a href="#">Contato</a>
+                <a href="https://www.instagram.com/clericotcafe?igsh=MWJ4azNoancwbHNuag%3D%3D"
+                    target="_blank">Contato</a>
             </div>
 
             <button class="btn-toggle-on" onclick="showMenuToggle()">
@@ -37,7 +39,8 @@
                 <li><a href="#inicio" id="toggle-home">Inicío</a></li>
                 <li><a href="#servicios" id="toggle-space">Ambiente</a></li>
                 <li><a href="#ubicacion" id="toggle-food">Cardápio</a></li>
-                <li><a href="#" target="_blank">Contato</a></li>
+                <li><a href="https://www.instagram.com/clericotcafe?igsh=MWJ4azNoancwbHNuag%3D%3D"
+                        target="_blank">Contato</a></li>
                 <button class="btn-toggle-close" onclick="closeMenuToggle()">
 
                     <span></span>
@@ -57,7 +60,11 @@
                     <span>Clericot Café</span>
                 </h1>
             </div>
-            <button class="start-btn">Conhecer</button>
+
+            <button class="start-btn">
+                <a href="https://www.instagram.com/clericotcafe?igsh=MWJ4azNoancwbHNuag%3D%3D"
+                    target="_blank">Conhecer</a></button>
+
         </section>
 
         <section class="section-destaques">
@@ -108,6 +115,8 @@
         </section>
 
         <div class="slides">
+            <div class="mask-slides"></div>
+            <video src="./assets/videos/sand.mp4" muted autoplay loop class="video2"></video>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <img class="swiper-slide" src="./assets/fundo.webp" alt="" srcset="">
@@ -124,8 +133,8 @@
         </div>
 
         <section class="section-cardapio">
-
-
+            <div class="mask-cardapio"></div>
+            <video src="./assets/videos/food.mp4" muted autoplay loop class="video3"></video>
             <div class="cardapio-card">
                 <h3>Cardápio 1</h3>
                 <div id="cardapio1">
@@ -151,7 +160,7 @@
 
         </section>
         <footer class="rodape">
-            <a href="https://freelings.netlify.app">© 2024 Freelings. Todos os direitos reservados.</a>
+            <a href="https://freelings.com.br" target="_blank">© 2024 Freelings. Todos os direitos reservados.</a>
         </footer>
     </main>
 
